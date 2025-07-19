@@ -178,7 +178,8 @@ export default function LatexEditor() {
             dangerouslySetInnerHTML={{ __html: renderedLatex }}
           />
 
-          <div className="flex justify-center space-x-4 mt-4">
+          <div className=" justify-center space-x-4 mt-4">
+            <div className="flex justify-center space-x-4">
             <button
               onClick={handleDownload}
               className="justify-center bg-blue-500 mx-auto text-white px-4 py-2 rounded hover:bg-blue-600 transition"
@@ -191,6 +192,7 @@ export default function LatexEditor() {
             >
               Copy to Clipboard
             </button>
+            </div>
           </div>
         </div>
       </div>
