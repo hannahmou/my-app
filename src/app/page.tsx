@@ -45,7 +45,7 @@ export default function LatexEditor() {
     }
   };
 
-  const insertTemplate = (latexCode) => {
+  const insertTemplate = (latexCode: string) => {
     setInput((prev) => prev + '\n' + latexCode);
   };
 
