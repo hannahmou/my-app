@@ -87,7 +87,7 @@ export default function LatexEditor() {
     <div className='p-4 font-sans'>
     {/* Title */}
       <div className="w-full max-w-md space-y-4 p-6 mx-auto text-center">
-        <h1 className="text-2xl font-bold">LaTeX Editor</h1>
+        <h1 className="text-2xl font-bold">SnipTex</h1>
         <p className="text-gray-600">
           Write and preview LaTeX equations. Use the sidebar to insert templates.
         </p>
@@ -181,13 +181,13 @@ export default function LatexEditor() {
           <div className="flex justify-center space-x-4 mt-4">
             <button
               onClick={handleDownload}
-              className="bg-blue-500 mx-auto text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+              className="justify-center bg-blue-500 mx-auto text-white px-4 py-2 rounded hover:bg-blue-600 transition"
             >
               Download PNG
             </button>
             <button
               onClick={handleCopyToClipboard}
-              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
+              className="justify-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
             >
               Copy to Clipboard
             </button>
