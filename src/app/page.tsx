@@ -150,11 +150,11 @@ export default function LatexEditor() {
                 '{': '}',
                 '[': ']',
               };
-              const open = e.key;
+              const open = e.key as '(' | '{' | '[';
               const close = pairs[open];
               if (close) {
                 e.preventDefault();
-                const el = e.target;
+                const el = e.target as HTMLTextAreaElement;
                 const [start, end] = [el.selectionStart, el.selectionEnd];
                 const before = input.slice(0, start);
                 const after = input.slice(end);
